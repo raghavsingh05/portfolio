@@ -1,63 +1,97 @@
-import React from 'react'
-import {Tilt} from "react-tilt"
-import {motion} from 'framer-motion'
-import {styles} from '../styles'
-import { services } from '../constants'
-import {fadeIn, textVariant} from '../utils/motion'
-import { SectionWrapper } from '../hoc'
-const ServiceCard = ({index, title, icon })=>{
-  return (
-    <Tilt className='xs:w-[235px] w-full justify-center items-center' >
-      <motion.div
-      variants={fadeIn("right", "spring", 0.5*index, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-      >
-        <div
-        options ={{
-          max:45,
-          scale:1,
-          speed:450
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[270px] flex justify-evenly items-center flex-col'
-        >
-          <img src={icon} alt={title}
-          className='w-16 h-16 object-contain'/>
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
-        </div>
-      </motion.div>
+import { useState } from 'react';
 
-    </Tilt>
-  )
-}
+import Button from './Button.jsx';
 
 const About = () => {
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('rajraghavsingh05@gmail.com');
+    setHasCopied(true);
+
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
+
   return (
-    <>
-    
-    <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>
-        Introduction</p>
-      <h2 className={styles.sectionHeadText}>
-        Overview
-      </h2>
-    </motion.div>
-    
-    <motion.p
-    variants={ fadeIn ('', '', 0.1, 1)}
-    className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-    >
+    <section className="c-space my-20" id="about">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+        <div className="col-span-1 xl:row-span-3">
+          <div className="grid-container">
+            <img src="src/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
-I'm a skilled software developer with experience in JavaScript and TypeScript, and experties in frameworks like React.js, Node.js, and Three.js. I'm a quick learner and create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+            <div>
+              <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
+              <p className="grid-subtext">
+                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
+                and responsive websites.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    </motion.p>
-      <div className='m-10 flex flex-wrap gap-10 '>
-        {services.map((services, index)=> (
-          <ServiceCard key= {services.title} index = {index} {...services} />
-        ))}
+        <div className="col-span-1 xl:row-span-3">
+          <div className="grid-container">
+            <img src="src/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
+            <div>
+              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-subtext">
+                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
+                applications
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-span-1 xl:row-span-4">
+          <div className="grid-container">
+            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+            <img src="src/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            </div>
+            <div>
+              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
+              <p className="grid-subtext">I&apos;m based in Rjieka, Croatia and open to remote work worldwide.</p>
+              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+            </div>
+          </div>
+        </div>
+
+        <div className="xl:col-span-2 xl:row-span-3">
+          <div className="grid-container">
+            <img src="src/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+
+            <div>
+              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-subtext">
+                I love solving problems and building things through code. Programming isn&apos;t just my
+                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="xl:col-span-1 xl:row-span-2">
+          <div className="grid-container">
+            <img
+              src="src/assets/grid4.png"
+              alt="grid-4"
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+            />
+
+            <div className="space-y-2">
+              <p className="grid-subtext text-center">Contact me</p>
+              <div className="copy-container" onClick={handleCopy}>
+                <img src={hasCopied ? 'src/assets/tick.svg' : 'src/assets/copy.svg'} alt="copy" />
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">adrian@jsmastery.pro</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default SectionWrapper (About, "about")
+export default About;
