@@ -4,9 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -16,14 +14,14 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#1c1c21",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #1c1c21" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full bg-[#1c1c21] rounded-full'>
           <img
             src={experience.icon}
             alt={experience.company_name}
@@ -32,6 +30,12 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%)',
+        }}
+      ></div>
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
@@ -53,6 +57,7 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
     </VerticalTimelineElement>
+    
   );
 };
 
