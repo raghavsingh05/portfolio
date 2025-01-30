@@ -175,46 +175,48 @@ import {
   
   const projects = [
     {
-      name: "Flipkart UI Clone",
+      name: "EzyWallet",
       description:
-        "This project enhances the user-experience and user-interface, it's a clone of Flipkart website, this project is based on Web designing.",
+        "An online wallet app to manage all your transactions and expenses effortlessly. Simplify peer-to-peer transfers and track finances with ease.",
       tags: [
         {
-          name: "HTML",
+          name: "Next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "JavaScript",
+          name: "TypeScript",
           color: "green-text-gradient",
         },
         {
-          name: "CSS",
+          name: "Tailwind CSS",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/raghavsingh05/Flip_clone",
+      source_code_link: "https://github.com/raghavsingh05/EzyWallet",
+      live_link:"https://ezywallet.rajraghav.com/",
     },
     {
-      name: "Space Fight Game",
+      name: "Eventers",
       description:
-        "A space fight game using Vanilla JavaScript, HTML, and CSS. It is a web-based game with a live high score and many more game features",
+        "Eventers, a web and mobile platform for seamless event hosting, guest management, QR code check-ins, and attendee tracking for event organizers.",
       tags: [
         {
-          name: "Vanilla JS",
+          name: "Next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "HTML",
+          name: "TypeScript",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind CSS",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/raghavsingh05/space-fight-game",
+      source_code_link: "https://github.com/raghavsingh05/Eventers",
+      live_link:"https://eventers.rajraghav.com/",
     },
     {
       name: "Trip Advisor",
@@ -222,20 +224,21 @@ import {
         "A comprehensive travel advisor web application that helps finding nearby hotels and maps using Google Map APIs and travelling APIs .",
       tags: [
         {
-          name: "react.js",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "APIs",
+          name: "REST APIs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Twailwind CSS",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
       source_code_link: "https://github.com/raghavsingh05/Trip-advisor",
+      live_link:"https://github.com/raghavsingh05/Trip-advisor",
     },
   ];
   
