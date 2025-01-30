@@ -26,6 +26,7 @@ const ProjectCard = ({
         transitionSpeed={1500}
         glareEnable={false}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full shadow-lg"
+        style={{ opacity: window.innerWidth < 670 ? 1 : 'inherit' }}
       >
         <div className='relative w-full h-[230px]'>
           <a href={live_link} target="_blank" rel="noreferrer">
