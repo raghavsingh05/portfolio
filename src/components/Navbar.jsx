@@ -16,7 +16,7 @@ const Navbar = () => {
         `${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`
       }
     >
-      <div className='flex w-full justify-between mx-auto bg-secondary/15 shadow-lg shadow-neutral-600/5 backdrop-blur-md border-neutral-900 border p-6 rounded-2xl'>
+      <div className='flex w-full justify-between mx-auto bg-secondary/15 shadow-lg shadow-neutral-600/5 backdrop-blur-md border-neutral-900 border p-2 sm:p-6 rounded-2xl'>
         <Link to='/'
           className='flex items-center gap-2 ' onClick={() => {
             setActive('');
