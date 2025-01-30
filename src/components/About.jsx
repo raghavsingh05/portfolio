@@ -30,7 +30,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Raj Raghav</p>
               <p className="grid-subtext">
-                With years of experience and a computer science, I have honed my skills in both frontend and backend dev, creating dynamic
+                With years of experience and a computer science degree, I have honed my skills in both frontend and backend dev, creating dynamic
                 and responsive websites.
               </p>
             </div>
