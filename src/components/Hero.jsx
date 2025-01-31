@@ -8,7 +8,7 @@ const Hero = () => {
       className="relative filter grayscale w-full h-screen mx-auto bg-cover bg-center"
       style={{
         backgroundImage: `url(${backgroundImage})`
-      }}
+      }} id='home'
     >
       <div
         className="absolute inset-0"
