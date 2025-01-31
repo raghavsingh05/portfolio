@@ -13,7 +13,7 @@ const App = () => {
         <About />
         <Experience />
         <div
-          className="relative w-full min-h-screen py-20 bg-cover bg-center bg-no-repeat"
+          className="relative w-full min-h-screen py-14 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',

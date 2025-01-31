@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { proprojects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -52,11 +53,13 @@ const ProjectCard = ({
             )}
           </a>
         </div>
-        <div className='mt-5'>
+        <div className={`mt-5 ${hideGithubLink ? "text-center" : ""}`}>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          {!hideGithubLink && (
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          )}
         </div>
-
+        {!hideGithubLink && (
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
@@ -67,6 +70,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+        )}
       </Tilt>
     </motion.div>
   );
@@ -111,7 +115,7 @@ const Works = () => {
         </div>
 
         <div className="mt-16 flex flex-wrap gap-7">
-          {projects.map((project, index) => (
+          {proprojects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} hideGithubLink />
           ))}
         </div>
