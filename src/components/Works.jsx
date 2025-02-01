@@ -88,7 +88,7 @@ const Works = () => {
         <div className="w-full flex justify-center">
           <motion.p
             // variants={fadeIn("", "", 0.1, 1)}
-            className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
+            className="mt-3 text-secondary text-center text-[17px] max-w-4xl leading-[30px]"
           >
             These projects highlight my skills and real-world experience, with brief
             descriptions, code links, and live demos, showcasing my problem-solving, tech
@@ -111,7 +111,7 @@ const Works = () => {
         <div className="w-full flex justify-center">
           <motion.p
             // variants={fadeIn("", "", 0.1, 1)}
-            className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
+            className="mt-3 text-secondary text-center text-[17px] max-w-4xl leading-[30px]"
           >
             Explore my professional work crafted for real-world users. Each project
             showcases live links to solutions in production, reflecting my expertise in
