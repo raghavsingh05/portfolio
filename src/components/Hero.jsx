@@ -5,7 +5,7 @@ const Hero = () => {
   const heroSubText = "I Develop Web applications with attractive user interfaces";
   return (
     <section
-      className="relative filter grayscale w-full h-screen mx-auto bg-cover bg-center"
+      className="relative filter grayscale w-full sm:h-screen h-[90vh] mx-auto bg-cover bg-center"
       style={{
         backgroundImage: `url(${backgroundImage})`
       }} id='home'
@@ -17,7 +17,7 @@ const Hero = () => {
         }}
       ></div>
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto my-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto my-auto flex flex-row items-start gap-5`}
       >
         <div className="sm:flex hidden flex-col justify-center items-center mt-16 ">
           <div className="w-5 h-5 rounded-full bg-[#1a1a1a]" />

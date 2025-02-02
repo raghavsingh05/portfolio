@@ -17,7 +17,7 @@ const App = () => {
 
         {/* Works Section */}
         <div
-          className="relative w-full min-h-screen py-14 bg-cover bg-center bg-no-repeat"
+          className="relative w-full min-h-screen sm:py-14 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",

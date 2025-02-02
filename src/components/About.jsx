@@ -21,7 +21,7 @@ const About = () => {
   };
 
   return (
-    <section className="c-space my-20 max-w-7xl mx-auto" id="about">
+    <section className="c-space mb-20 max-w-7xl mx-auto" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -94,7 +94,7 @@ const About = () => {
             <img
               src={grid4}
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+              className="w-full md:h-[126px] sm:h-[276px] h-fit sm:mb-1 mb-[-80px] object-cover sm:object-top"
             />
 
             <div className="space-y-2">
