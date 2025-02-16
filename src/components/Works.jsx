@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, proprojects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
