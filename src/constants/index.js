@@ -124,11 +124,11 @@ import {
   const experiences = [
 
     {
-      title: "Full-Stack Web Developer",
+      title: "Full-Stack Web Developer Freelancer",
       company_name: "BusinExprets",
       icon: tesla,
       iconBg: "#383E56",
-      date: "December 2023 - May 2024",
+      date: "December 2023 - Present",
       points: [
         "Customized official home page and increased SEO by 12%.",
         "worked under Senior developers and created several websites for clients.",
