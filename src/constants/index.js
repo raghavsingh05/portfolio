@@ -124,11 +124,24 @@ import {
   const experiences = [
 
     {
+      title: "Full-Stack Web Developer",
+      company_name: "Digital Ipsum",
+      icon: meta,
+      iconBg: "#383E56",
+      date: "November 2025 - June 2026",
+      points: [
+        "Built full-stack features and internal efficiency tools across client SaaS applications, websites, WordPress, and Shopify projects for a digital marketing agency's dev team.",
+        "Designed and shipped an in-house team communication platform, migrating the company off WhatsApp for internal collaboration.",
+        "Owned deployment and administration of a dedicated server (InMotion) hosting all client applications and websites; improved core site speed by 60% and grew online reach by 25%. ",
+        "Led and mentored a 16-person intern team, coordinating task delivery and improving overall output quality. Integrated AI-powered features into client web apps using third-party APIs. ",
+      ],
+    },
+    {
       title: "Full-Stack Web Developer Freelancer",
       company_name: "BusinExprets",
       icon: tesla,
       iconBg: "#383E56",
-      date: "December 2023 - Present",
+      date: "December 2023 - November 2025",
       points: [
         "Customized official home page and increased SEO by 12%.",
         "worked under Senior developers and created several websites for clients.",
@@ -151,7 +164,7 @@ import {
     
     {
       title: "Freelancing",
-      company_name: "UpWork",
+      company_name: "Freelancer.com",
       icon: shopify,
       iconBg: "#383E56",
       date: "August 2022 - Jan 2023",
